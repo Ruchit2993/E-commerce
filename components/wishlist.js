@@ -170,9 +170,7 @@ loadProducts()
           cart.push(productId);
           localStorage.setItem('cart', JSON.stringify(cart));
           updateBadges();
-          alert('Added to cart.');
         } else {
-          alert('Already in cart.');
         }
       } else if (e.target.closest('.trash-icon')) {
         const card = e.target.closest('.card');
@@ -240,7 +238,6 @@ loadProducts()
       wishlistRow.innerHTML = '';
       wishlistCount.innerHTML = `<strong>Wishlist (0)</strong>`;
       updateBadges();
-      alert('Moved all to cart.');
     });
   })
   .catch(error => console.error('Error loading products:', error.message));
