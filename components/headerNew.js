@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (logoutLink) {
         logoutLink.addEventListener('click', function (e) {
             e.preventDefault();
-            // Clearing localStorage
             localStorage.removeItem('loginResponse');
             localStorage.removeItem('cartTotal');
             localStorage.removeItem('cart');
