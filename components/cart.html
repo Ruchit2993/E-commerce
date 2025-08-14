@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart Page - Bootstrap Only</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-white">
+
+<div id="headerNew-placeholder" class="sticky-top"></div>
+
+<div class="container mt-4">
+
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb" class="mb-4">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="../components/test-2.html" class="text-muted text-decoration-none">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Cart</li>
+    </ol>
+  </nav>
+
+  <!-- Products Table -->
+  <div class="table-responsive mb-4">
+    <table class="table align-middle" id="cart-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tbody id="cart-body">
+        <!-- Dynamic cart items -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="d-flex justify-content-between mb-4">
+    <button class="btn btn-outline-dark">Return To Shop</button>
+    <button class="btn btn-outline-dark" id="update-cart">Update Cart</button>
+  </div>
+
+  <!-- Coupon + Cart Total side by side -->
+  <div class="row align-items-start">
+    <!-- Coupon Code -->
+    <div class="col-md-6 mb-3 mb-md-0">
+      <div class="input-group">
+        <input type="text" class="form-control" id="coupon-code" placeholder="Coupon Code" aria-label="Coupon Code">
+        <button class="btn btn-danger" id="apply-coupon">Apply Coupon</button>
+      </div>
+    </div>
+    <!-- Cart Total Box -->
+    <div class="col-md-6">
+      <div class="border rounded p-4" id="cart-total-box">
+        <h5 class="fw-semibold mb-3">Cart Total</h5>
+        <div class="d-flex justify-content-between mb-2">
+          <span>Subtotal:</span>
+          <span id="subtotal">$0</span>
+        </div>
+        <div class="d-flex justify-content-between mb-2">
+          <span>Shipping:</span>
+          <span id="shipping">Free</span>
+        </div>
+        <div class="d-flex justify-content-between mb-2" id="discount-row" style="display: none;">
+          <span>Discount (30%):</span>
+          <span id="discount-amount">$0</span>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-between mb-3">
+          <span>Total:</span>
+          <span id="total">$0</span>
+        </div>
+        <button class="btn btn-danger w-100" id="process-checkout">Process to checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script src="./cart.js"></script>
+</body>
+</html>

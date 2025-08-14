@@ -1,0 +1,71 @@
+[
+  {
+    "id": 1,
+    "name": "Breed Dry Dog Food",
+    "image": "../assets/1_dog_food.png",
+    "price": 100,
+    "rating": 5,
+    "reviews": 35
+  },
+  {
+    "id": 2,
+    "name": "CANON EOS DSLR Camera",
+    "image": "../assets/2_canon.png",
+    "price": 380,
+    "rating": 4,
+    "reviews": 95
+  },
+  {
+    "id": 3,
+    "name": "ASUS FHD Gaming Laptop",
+    "image": "../assets/3_laptop.png",
+    "price": 960,
+    "originalPrice": 1160,
+    "rating": 4,
+    "reviews": 65
+  },
+  {
+    "id": 4,
+    "name": "Curology Product Set",
+    "image": "../assets/4_creams.png",
+    "price": 500,
+    "rating": 4,
+    "reviews": 145
+  },
+  {
+    "id": 5,
+    "name": "Kids Electric Car",
+    "image": "../assets/5_cars.png",
+    "price": 200,
+    "rating": 4,
+    "reviews": 25,
+    "colors": ["red", "yellow"]
+  },
+  {
+    "id": 6,
+    "name": "Jr. Zoom Soccer Cleats",
+    "image": "../assets/6_spikes.png",
+    "price": 110,
+    "rating": 4,
+    "reviews": 25,
+    "colors": ["yellow", "red"]
+  },
+  {
+    "id": 7,
+    "name": "GP11 Shooter USB Gamepad",
+    "image": "../assets/7_controller.png",
+    "price": 50,
+    "rating": 4,
+    "reviews": 25,
+    "colors": ["black", "red"]
+  },
+  {
+    "id": 8,
+    "name": "Quilted Satin Jacket",
+    "image": "../assets/8_jacket.png",
+    "price": 120,
+    "rating": 4,
+    "reviews": 25,
+    "colors": ["black", "yellow"]
+  }
+]
