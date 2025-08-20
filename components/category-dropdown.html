@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product Page</title>
+
+    <!-- Bootstrap CSS (allowed) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap icons (allowed) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body class="bg-light">
+
+    <!-- Top iPhone frame -->
+    <div class="container text-center my-4">
+        <img src="../assets/i-phone-frame.png" alt="iPhone Frame" class="img-fluid mx-auto d-block">
+    </div>
+
+    <!-- Our Products -->
+    <section class="container my-4">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+            <h6 class="text-danger mb-0">Our Products</h6>
+        </div>
+
+        <h2 class="mb-3">Explore Our Products</h2>
+
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-6 col-md-3">
+                <div class="card h-100">
+                    <img src="../assets/1_dog_food.png" class="card-img-top" alt="Breed Dry Dog Food">
+                    <div class="card-body text-center">
+                        <button class="btn btn-dark w-100 mb-2 add-cart" data-name="Breed Dry Dog Food">
+                            <i class="bi bi-cart-fill me-2"></i> Add To Cart
+                        </button>
+                        <h6 class="card-title">Breed Dry Dog Food</h6>
+                        <p class="mb-1 fw-bold">$100</p>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                            <small class="text-muted ms-2">(35)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-6 col-md-3">
+                <div class="card h-100">
+                    <img src="../assets/2_canon.png" class="card-img-top bg-white" alt="CANON EOS DSLR Camera" style="height:220px;object-fit:contain;">
+                    <div class="card-body text-center">
+                        <button class="btn btn-dark w-100 mb-2 add-cart" data-name="CANON EOS DSLR Camera">
+                            <i class="bi bi-cart-fill me-2"></i> Add To Cart
+                        </button>
+                        <h6 class="card-title">CANON EOS DSLR Camera</h6>
+                        <p class="fw-bold mb-1">$380</p>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                            <small class="text-muted ms-2">(95)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 (Discount badge + Eye icon) -->
+            <div class="col-6 col-md-3">
+                <div class="card h-100 position-relative">
+                    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-35%</span>
+                    <span class="position-absolute top-0 end-0 m-2 bg-white rounded-circle p-1">
+                        <i class="bi bi-eye text-secondary"></i>
+                    </span>
+                    <img src="../assets/3_laptop.png" class="card-img-top bg-white" alt="ASUS FHD Gaming Laptop" style="height:220px;object-fit:contain;">
+                    <div class="card-body text-center">
+                        <button class="btn btn-dark w-100 mb-2 add-cart" data-name="ASUS FHD Gaming Laptop">
+                            <i class="bi bi-cart-fill me-2"></i> Add To Cart
+                        </button>
+                        <h6 class="card-title">ASUS FHD Gaming Laptop</h6>
+                        <p class="mb-1">
+                            <span class="text-danger fw-bold">$960</span>
+                            <small class="text-muted text-decoration-line-through ms-2">$1160</small>
+                        </p>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                            <small class="text-muted ms-2">(65)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-6 col-md-3">
+                <div class="card h-100">
+                    <img src="../assets/4_creams.png" class="card-img-top bg-white" alt="Curology Product Set" style="height:220px;object-fit:contain;">
+                    <div class="card-body text-center">
+                        <button class="btn btn-dark w-100 mb-2 add-cart" data-name="Curology Product Set">
+                            <i class="bi bi-cart-fill me-2"></i> Add To Cart
+                        </button>
+                        <h6 class="card-title">Curology Product Set</h6>
+                        <p class="fw-bold mb-1">$500</p>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                            <small class="text-muted ms-2">(145)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 (NEW Badge) -->
+            <div class="col-6 col-md-3">
+                <div class="card h-100 position-relative">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">NEW</span>
+                    <img src="../assets/5_cars.png" class="card-img-top bg-white" alt="Kids Electric Car" style="height:220px;object-fit:contain;">
+                    <div class="card-body text-center">
+                        <button class="btn btn-dark w-100 mb-2 add-cart" data-name="Kids Electric Car">
+                            <i class="bi bi-cart-fill me-2"></i> Add To Cart
+                        </button>
+                        <h6 class="card-title">Kids Electric Car</h6>
+                        <p class="fw-bold mb-1">$200</p>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                            <small class="text-muted ms-2">(25)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-6 col-md-3">
+                <div class="card h-100">
+                    <img src="../assets/6_spikes.png" class="card-img-top bg-white" alt="Jr. Zoom Soccer Cleats" style="height:220px;object-fit:contain;">
+                    <div class="card-body text-center">
+                        <button class="btn btn-dark w-100 mb-2 add-cart" data-name="Jr. Zoom Soccer Cleats">
+                            <i class="bi bi-cart-fill me-2"></i> Add To Cart
+                        </button>
+                        <h6 class="card-title">Jr. Zoom Soccer Cleats</h6>
+                        <p class="fw-bold mb-1">$110</p>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                            <small class="text-muted ms-2">(25)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 7 (NEW) -->
+            <div class="col-6 col-md-3">
+                <div class="card h-100 position-relative">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">NEW</span>
+                    <img src="../assets/7_controller.png" class="card-img-top bg-white" alt="GP11 Shooter USB Gamepad" style="height:220px;object-fit:contain;">
+                    <div class="card-body text-center">
+                        <button class="btn btn-dark w-100 mb-2 add-cart" data-name="GP11 Shooter USB Gamepad">
+                            <i class="bi bi-cart-fill me-2"></i> Add To Cart
+                        </button>
+                        <h6 class="card-title">GP11 Shooter USB Gamepad</h6>
+                        <p class="fw-bold mb-1">$50</p>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                            <small class="text-muted ms-2">(25)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="col-6 col-md-3">
+                <div class="card h-100">
+                    <img src="../assets/8_jacket.png" class="card-img-top bg-white" alt="Quilted Satin Jacket" style="height:220px;object-fit:contain;">
+                    <div class="card-body text-center">
+                        <button class="btn btn-dark w-100 mb-2 add-cart" data-name="Quilted Satin Jacket">
+                            <i class="bi bi-cart-fill me-2"></i> Add To Cart
+                        </button>
+                        <h6 class="card-title">Quilted Satin Jacket</h6>
+                        <p class="fw-bold mb-1">$120</p>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                            <small class="text-muted ms-2">(25)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- View All Button -->
+        <div class="text-center mt-4">
+            <button class="btn btn-danger px-4">View All Products</button>
+        </div>
+    </section>
+
+    <!--Icons For Support -->
+    <div class="container text-center py-5">
+        <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <img src="../assets/fast-delivery.png" alt="Fast Delivery" class="img-fluid mb-3" style="max-height:80px;">
+                <h6>FREE AND FAST DELIVERY</h6>
+                <p class="mb-0">Free delivery for orders over $140</p>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+                <img src="../assets/supprt.png" alt="Customer Service" class="img-fluid mb-3" style="max-height:80px;">
+                <h6>24/7 CUSTOMER SERVICE</h6>
+                <p class="mb-0">Friendly 24/7 customer support</p>
+            </div>
+            <div class="col-md-4">
+                <img src="../assets/guarantee.png" alt="Money Back" class="img-fluid mb-3" style="max-height:80px;">
+                <h6>MONEY BACK GUARANTEE</h6>
+                <p class="mb-0">We return money within 30 days</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.add-cart').forEach(function(btn){
+            btn.addEventListener('click', function(){
+                var name = btn.getAttribute('data-name') || 'product';
+                alert('Added "' + name + '" to cart.');
+            });
+        });
+    </script>
+</body>
+</html>

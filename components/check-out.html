@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Checkout Page</title>
-        <!-- Bootstrap CSS CDN -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout Page</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-
-    <div id="headerNew-placeholder" class="sticky-top"></div>
 
     <div class="container mt-5">
         <nav aria-label="breadcrumb">
@@ -29,34 +24,34 @@
         <div class="row">
             <div class="col-md-7">
                 <h3>Billing Details</h3>
-                <form id="billing-form">
+                <form>
                     <div class="form-group">
                         <label>First Name<span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="first-name" required>
+                        <input type="text" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label>Company Name</label>
-                        <input type="text" class="form-control" id="company-name">
+                        <input type="text" class="form-control">
                     </div>
                     <div class="form-group">
                         <label>Street Address<span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="street-address" required>
+                        <input type="text" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label>Apartment, floor, etc. (optional)</label>
-                        <input type="text" class="form-control" id="apartment">
+                        <input type="text" class="form-control">
                     </div>
                     <div class="form-group">
                         <label>Town/City<span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="town-city" required>
+                        <input type="text" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label>Phone Number<span class="text-danger">*</span></label>
-                        <input type="tel" class="form-control" id="phone-number" required>
+                        <input type="tel" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label>Email Address<span class="text-danger">*</span></label>
-                        <input type="email" class="form-control" id="email-address" required>
+                        <input type="email" class="form-control" required>
                     </div>
                     <div class="form-group form-check">
                         <input type="checkbox" class="form-check-input" id="saveInfo" checked>
@@ -67,40 +62,46 @@
                 </form>
             </div>
             <div class="col-md-5">
-                <div id="order-summary" class="mb-3">
-                    <!-- Dynamic order summary will be inserted here -->
+                <div class="mb-3">
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/monitor.png" alt="LCD Monitor" class="mr-2 img-fluid" style="width: 50px;">
+                        <span>LCD Monitor</span>
+                        <span class="ml-auto">$650</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/controller-2.png" alt="Gamepad" class="mr-2 img-fluid" style="width: 50px;">
+                        <span>H1 Gamepad</span>
+                        <span class="ml-auto">$1100</span>
+                    </div>
                 </div>
                 <ul class="list-group mb-3">
                     <li class="list-group-item d-flex justify-content-between">
                         <span>Subtotal:</span>
-                        <strong id="subtotal">$0</strong>
+                        <strong>$1750</strong>
                     </li>
                     <li class="list-group-item d-flex justify-content-between">
                         <span>Shipping:</span>
                         <strong>Free</strong>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between" id="discount-row" style="display: none;">
-                        <span>Discount (30%):</span>
-                        <strong id="discount-amount">$0</strong>
-                    </li>
                     <li class="list-group-item d-flex justify-content-between">
                         <span>Total:</span>
-                        <strong id="total">$0</strong>
+                        <strong>$1750</strong>
                     </li>
                 </ul>
 
                 <div class="mb-3 col">
-                    <div class="row row-cols-6">
+                    <div class=" row row-cols-6 row">
+
                         <div class="form-check col col-6">
                             <input class="form-check-input" type="radio" name="payment" id="bank" value="bank">
                             <label class="form-check-label" for="bank">
                                 Bank
                             </label>
                         </div>
-                        <div class="d-flex align-items-center mt-2">
-                            <img src="../assets/b-bkash.png" height="24" alt="bkash" class="mr-2">
-                            <img src="../assets/b-visa.png" height="24" alt="visa" class="mr-2">
-                            <img src="../assets/b-mastercard.png" height="24" alt="mastercard" class="mr-2">
+                        <div class="mt-2 col col-6">
+                            <img src="../assets/b-bkash.png" height="24" alt="bkash">
+                            <img src="../assets/b-visa.png" height="24" alt="visa">
+                            <img src="../assets/b-mastercard.png" height="24" alt="mastercard">
                             <img src="../assets/b-netram.png" height="24" alt="netram">
                         </div>
                     </div>
@@ -112,26 +113,27 @@
                     </div>
                 </div>
 
-                <div class="mb-3 row" id="coupon-section">
+                <div class="mb-3 row">
                     <div class="input-group col col-8">
-                        <input type="text" class="form-control m-2" id="coupon-code" placeholder="Coupon Code">
+                        <input type="text" class="form-control" placeholder="Coupon Code">
                     </div>
                     <div class="input-group-append col col-4">
-                        <button class="btn btn-danger m-2" type="button" id="apply-coupon">Apply Coupon</button>
+                        <button class="btn btn-danger" type="button">Apply Coupon</button>
                     </div>
                 </div>
                 <div class="mb-3 row">
                     <div class="col col-6">
-                        <button type="button" class="btn btn-danger btn-block" id="place-order">Place Order</button>
+                        <button type="button" class="btn btn-danger btn-block">Place Order</button>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 
-    <div id="footer-placeholder"></div>
-
-    <script src="./check-out.js"></script>
+    <!-- Bootstrap JS dependencies (optional, for interactive components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

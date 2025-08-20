@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid justify-content-between">
+            <a class="navbar-brand" href="#">Navbar</a>
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Dropdown</a>
+                </li>
+
+            </ul>
+        </div>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </nav> -->
+
+    <div class="top-bar bg-dark">
+        <div class="container-fluid d-flex justify-content-between align-items-center px-3">
+            <div class="text-center w-100">
+                <span class="text-white">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a href="#"
+                        class="text-white fw-bold">ShopNow</a></span>
+            </div>
+            <div class="position-absolute end-0 me-3">
+                <div class="dropdown">
+                    <a class="text-white dropdown-toggle text-decoration-none" href="#" role="button"
+                        id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        English
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Hindi</a></li>
+                        <li><a class="dropdown-item" href="#">French</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white py-3 sticky-top border-bottom mb-5">
+        <div class="container-fluid px-4">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">Exclusive</a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Links and Search -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <!-- Centered nav links -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign Up</a>
+                    </li>
+                </ul>
+
+                <!-- Search form on the right -->
+                <form class="d-flex align-items-center ms-lg-auto mt-3 mt-lg-0" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-light border-0"
+                            placeholder="What are you looking for?" aria-label="Search">
+                        <button class="btn btn-light border-0" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+<!-- Main Body -->
+    <div class="container-fluid vh-100 mb-5">
+  <div class="row h-100">
+    
+    <!-- Left side: Image -->
+    <div class="col-md-6 d-none d-md-block bg-light p-0">
+      <img src="../assets/login-mob.png" alt="Shopping and Phone" class="img-fluid h-100 w-100" style="object-fit: cover;">
+    </div>
+    
+    <!-- Right side: Login form -->
+    <div class="col-md-6 d-flex align-items-center justify-content-center">
+      <div class="w-75">
+        <h3 class="fw-bold mb-3">Log in to Exclusive</h3>
+        <p class="text-muted mb-4">Enter your details below</p>
+        
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control border-0 border-bottom rounded-0" placeholder="Email or Phone Number">
+          </div>
+          <div class="mb-4">
+            <input type="password" class="form-control border-0 border-bottom rounded-0" placeholder="Password">
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <button type="submit" class="btn btn-danger px-4">Log In</button>
+            <a href="#" class="text-danger text-decoration-none">Forget Password?</a>
+          </div>
+        </form>
+        
+      </div>
+    </div>
+    
+  </div>
+</div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row text-start">
+
+                <!-- Column 1: Branding and Subscribe -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold">Exclusive</h5>
+                    <p class="mb-1">Subscribe</p>
+                    <p>Get 10% off your first order</p>
+                    <form class="input-group">
+                        <input type="email" class="form-control bg-dark" placeholder="Enter your email">
+                        <button class="btn btn-outline-light" type="submit">
+                            <i class="bi bi-send"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Column 2: Support -->
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">Support</h6>
+                    <p class="mb-1">111 Bijoy sarani, Dhaka,</p>
+                    <p class="mb-1">DH 1515, Bangladesh.</p>
+                    <p class="mb-1">exclusive@gmail.com</p>
+                    <p>+88015-88888-9999</p>
+                </div>
+
+                <!-- Column 3: Account -->
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold">Account</h6>
+                    <p>My Account</p>
+                    <p>Login / Register</p>
+                    <p>Cart</p>
+                    <p>Wishlist</p>
+                    <p>Shop</p>
+                </div>
+
+                <!-- Column 4: Quick Link -->
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold">Quick Link</h6>
+                    <p>Privacy Policy</p>
+                    <p>Terms Of Use</p>
+                    <p>FAQ</p>
+                    <p>Contact</p>
+                </div>
+
+                <!-- Column 5: Download App -->
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold">Download App</h6>
+                    <p class="small">Save $3 with App New User Only</p>
+                    <div class="d-flex align-items-start gap-2 mb-4">
+                        <img src="../assets/Qrcode.png" class="img-fluid mb-2" alt="QR Code">
+                        <div>
+                            <img src="../assets/Play-store.png" alt="Google Play" class="img-fluid mb-1"
+                                style="max-width: 120px;">
+                            <img src="../assets/App-store.png" alt="App Store" class="img-fluid"
+                                style="max-width: 120px;">
+                        </div>
+                    </div>
+
+
+                    <!-- Social Icons -->
+                    <div class="d-flex gap-3">
+                        <i class="bi bi-facebook fs-5"></i>
+                        <i class="bi bi-twitter fs-5"></i>
+                        <i class="bi bi-instagram fs-5"></i>
+                        <i class="bi bi-linkedin fs-5"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="text-center border-top border-secondary pt-3 mt-4">
+                <p class="mb-0 small text-secondary">
+                    &copy; Copyright Rimel 2022. All right reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

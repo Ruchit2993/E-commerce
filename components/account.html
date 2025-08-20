@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <title>Edit Profile</title>
+  <title>Edit Profile - Bootstrap Only</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap CSS CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-
 <body>
-  <!-- Top Navigation Placeholder -->
-  <div id="headerNew-placeholder" class="sticky-top"></div>
+  <!-- Top Navigation -->
+  <nav class="container py-3">
+    <div class="row">
+      <div class="col-md-8">
+        <small class="text-muted">Home / My Account</small>
+      </div>
+      <div class="col-md-4 text-end">
+        <small class="text-muted">Welcome! <span class="text-danger">Md Rimel</span></small>
+      </div>
+    </div>
+  </nav>
 
   <div class="container">
     <div class="row">
@@ -44,142 +50,50 @@
       <!-- Edit Profile -->
       <div class="col-md-9 mt-4">
         <h5 class="mb-4 text-danger fw-bold">Edit Your Profile</h5>
-        <form id="profile-form">
+        <form>
           <div class="row mb-3">
             <div class="col-md-6">
               <label class="form-label">First Name</label>
-              <input type="text" class="form-control" id="first-name" required>
-              <div class="invalid-feedback">Please enter your first name.</div>
+              <input type="text" class="form-control" value="Md" readonly>
             </div>
             <div class="col-md-6">
               <label class="form-label">Last Name</label>
-              <input type="text" class="form-control" id="last-name" required>
-              <div class="invalid-feedback">Please enter your last name.</div>
+              <input type="text" class="form-control" value="Rimel" readonly>
             </div>
           </div>
           <div class="row mb-3">
             <div class="col-md-6">
               <label class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" required>
-              <div class="invalid-feedback">Please enter a valid email address.</div>
+              <input type="email" class="form-control" value="rimel111@gmail.com" readonly>
             </div>
             <div class="col-md-6">
-              <label class="form-label">Mobile Number</label>
-              <input type="text" class="form-control" id="mobile-number" required>
-              <div class="invalid-feedback">Please enter a valid mobile number.</div>
-
-
-            </div>
-          </div>
-          <div class="row">
-            <div class="mb-3 col-6">
-
-              <label class="form-label">Gender</label>
-              <div class="d-flex flex-wrap gap-3">
-                <div class="form-check">
-                  <input type="radio" class="form-check-input" name="gender" id="male" value="male" required>
-                  <label class="form-check-label" for="male">Male</label>
-                </div>
-                <div class="form-check">
-                  <input type="radio" class="form-check-input" name="gender" id="female" value="female">
-                  <label class="form-check-label" for="female">Female</label>
-                </div>
-                <div class="form-check">
-                  <input type="radio" class="form-check-input" name="gender" id="other" value="other">
-                  <label class="form-check-label" for="other">Other</label>
-                </div>
-              </div>
-
-
-              <div class="invalid-feedback">Please select a gender.</div>
-            </div>
-            <div class="mb-3 col-6">
               <label class="form-label">Address</label>
-              <input type="text" class="form-control" id="address" required>
-              <div class="invalid-feedback">Please enter your address.</div>
-            </div>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Interest</label>
-            <div class="d-flex flex-wrap gap-3">
-
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" name="interest" id="gaming" value="Gaming">
-                <label class="form-check-label" for="gaming">Gaming</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" name="interest" id="mobiles" value="Mobiles">
-                <label class="form-check-label" for="mobiles">Mobiles</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" name="interest" id="laptop" value="Laptop">
-                <label class="form-check-label" for="laptop">Laptop</label>
-              </div>
-              <div class="invalid-feedback">Please select at least one interest.</div>
-            </div>
-          </div>
-          <div class="row mb-3">
-            <div class="col-md-4">
-              <label class="form-label">Country</label>
-              <select class="form-select" id="country" required>
-                <option value="">Select Country</option>
-                <option value="US">United States</option>
-                <option value="IN">India</option>
-                <option value="UK">United Kingdom</option>
-              </select>
-              <div class="invalid-feedback">Please select a country.</div>
-            </div>
-            <div class="col-md-4">
-              <label class="form-label">State</label>
-              <select class="form-select" id="state" required>
-                <option value="">Select State</option>
-                <option value="CA">California</option>
-                <option value="TX">Texas</option>
-                <option value="MH">Maharashtra</option>
-              </select>
-              <div class="invalid-feedback">Please select a state.</div>
-            </div>
-            <div class="col-md-4">
-              <label class="form-label">City</label>
-              <select class="form-select" id="city" required>
-                <option value="">Select City</option>
-                <option value="LA">Los Angeles</option>
-                <option value="Houston">Houston</option>
-                <option value="Mumbai">Mumbai</option>
-              </select>
-              <div class="invalid-feedback">Please select a city.</div>
+              <input type="text" class="form-control" value="Kingston, 5236, United State" readonly>
             </div>
           </div>
           <div class="mb-3">
             <span class="fw-bold">Password Changes</span>
           </div>
           <div class="mb-3">
-            <label class="form-label">Current Password</label>
-            <input type="password" class="form-control" id="current-password" placeholder="Current Password">
+            <input type="password" class="form-control" placeholder="Current Passwod">
           </div>
           <div class="mb-3">
-            <label class="form-label">New Password</label>
-            <input type="password" class="form-control" id="new-password" placeholder="New Password">
-            <div class="invalid-feedback">Please enter a new password.</div>
+            <input type="password" class="form-control" placeholder="New Passwod">
           </div>
           <div class="mb-4">
-            <label class="form-label">Confirm New Password</label>
-            <input type="password" class="form-control" id="confirm-password" placeholder="Confirm New Password">
-            <div class="invalid-feedback">Passwords do not match.</div>
+            <input type="password" class="form-control" placeholder="Confirm New Passwod">
           </div>
           <div class="d-flex justify-content-end gap-2">
-            <button type="button" class="btn btn-link text-secondary" id="cancel-btn">Cancel</button>
-            <button type="submit" class="btn btn-danger" id="save-btn">Save Changes</button>
+            <button type="button" class="btn btn-link text-secondary">Cancel</button>
+            <button type="submit" class="btn btn-danger">Save Changes</button>
           </div>
         </form>
       </div>
     </div>
   </div>
-
-  <!-- Footer Placeholder -->
-  <div id="footer-placeholder"></div>
   
-  <script src="./account.js">  </script>
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
+    

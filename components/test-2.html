@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-light">
+
+    <!-- Top iPhone frame -->
+    <div class="container text-center my-4">
+        <img src="../assets/i-phone-frame.png" alt="iPhone Frame" class="img-fluid mx-auto d-block">
+    </div>
+
+    <!-- Our Products -->
+    <section class="container my-4">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+            <h6 class="text-danger mb-0">Our Products</h6>
+        </div>
+        <h2 class="mb-3">Explore Our Products</h2>
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-6 col-md-3">
+                <div class="card h-100 product-card">
+                    <!-- Top-right icon group -->
+                    <div class="position-absolute top-0 end-0 m-2 d-flex flex-column align-items-center">
+                        <span class="bg-white rounded-circle p-1 d-flex align-items-center justify-content-center">
+                            <i class="bi bi-heart text-secondary"></i>
+                        </span>
+                        <span
+                            class="bg-white rounded-circle p-1 d-flex align-items-center justify-content-center mt-n1">
+                            <i class="bi bi-eye text-secondary"></i>
+                        </span>
+                    </div>
+
+                    <div class="ratio ratio-4x3">
+                        <img src="../assets/1_dog_food.png" class="card-img-top img-fluid p-4" alt="Breed Dry Dog Food">
+                    </div>
+                    <div class="card-body text-center">
+                        <button class="btn btn-dark w-100 mb-2 add-cart opacity-0" data-name="Breed Dry Dog Food">
+                            <i class="bi bi-cart-fill me-2"></i> Add To Cart
+                        </button>
+                        <h6 class="card-title">Breed Dry Dog Food</h6>
+                        <p class="mb-1 fw-bold">$100</p>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                            <small class="text-muted ms-2">(35)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-6 col-md-3">
+                <div class="card h-100 product-card">
+                    <div class="position-absolute top-0 end-0 m-2 d-flex flex-column align-items-center">
+                        <span class="bg-white rounded-circle p-1 d-flex align-items-center justify-content-center">
+                            <i class="bi bi-heart text-secondary"></i>
+                        </span>
+                        <span
+                            class="bg-white rounded-circle p-1 d-flex align-items-center justify-content-center mt-n1">
+                            <i class="bi bi-eye text-secondary"></i>
+                        </span>
+                    </div>
+
+                    <img src="../assets/2_canon.png" class="card-img-top bg-white p-4" alt="CANON EOS DSLR Camera"
+                        style="height:220px;object-fit:contain;">
+                    <div class="card-body text-center">
+                        <button class="btn btn-dark w-100 mb-2 add-cart opacity-0" data-name="Breed Dry Dog Food">
+                            <i class="bi bi-cart-fill me-2"></i> Add To Cart
+                        </button>
+                        <h6 class="card-title">CANON EOS DSLR Camera</h6>
+                        <p class="fw-bold mb-1">$380</p>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                            <small class="text-muted ms-2">(95)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 (Discount badge + Eye icon) -->
+            <div class="col-6 col-md-3">
+                <div class="card h-100 position-relative product-card">
+                    <div class="position-absolute top-0 end-0 m-2 d-flex flex-column align-items-center">
+                        <span class="bg-white rounded-circle p-1 d-flex align-items-center justify-content-center">
+                            <i class="bi bi-heart text-secondary"></i>
+                        </span>
+                        <span
+                            class="bg-white rounded-circle p-1 d-flex align-items-center justify-content-center mt-n1">
+                            <i class="bi bi-eye text-secondary"></i>
+                        </span>
+                    </div>
+
+                    <img src="../assets/3_laptop.png" class="card-img-top bg-white p-4" alt="ASUS FHD Gaming Laptop"
+                        style="height:220px;object-fit:contain;">
+                    <div class="card-body text-center">
+                        <button class="btn btn-dark w-100 mb-2 add-cart opacity-0" data-name="ASUS FHD Gaming Laptop">
+                            <i class="bi bi-cart-fill me-2"></i> Add To Cart
+                        </button>
+                        <h6 class="card-title">ASUS FHD Gaming Laptop</h6>
+                        <p class="mb-1">
+                            <span class="text-danger fw-bold">$960</span>
+                            <small class="text-muted text-decoration-line-through ms-2">$1160</small>
+                        </p>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                            <small class="text-muted ms-2">(65)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-6 col-md-3">
+                <div class="card h-100 product-card">
+                    <div class="position-absolute top-0 end-0 m-2 d-flex flex-column align-items-center">
+                        <span class="bg-white rounded-circle p-1 d-flex align-items-center justify-content-center">
+                            <i class="bi bi-heart text-secondary"></i>
+                        </span>
+                        <span
+                            class="bg-white rounded-circle p-1 d-flex align-items-center justify-content-center mt-n1">
+                            <i class="bi bi-eye text-secondary"></i>
+                        </span>
+                    </div>
+
+                    <img src="../assets/4_creams.png" class="card-img-top bg-white p-4" alt="Curology Product Set"
+                        style="height:220px;object-fit:contain;">
+                    <div class="card-body text-center">
+                        <button class="btn btn-dark w-100 mb-2 add-cart opacity-0" data-name="Curology Product Set">
+                            <i class="bi bi-cart-fill me-2"></i> Add To Cart
+                        </button>
+                        <h6 class="card-title">Curology Product Set</h6>
+                        <p class="fw-bold mb-1">$500</p>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                            <small class="text-muted ms-2">(145)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 (NEW Badge) -->
+            <div class="col-6 col-md-3 product-card">
+
+                <div class="card h-100 position-relative">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">NEW</span>
+                    <div class="position-absolute top-0 end-0 m-2 d-flex flex-column align-items-center">
+                        <span class="bg-white rounded-circle p-1 d-flex align-items-center justify-content-center">
+                            <i class="bi bi-heart text-secondary"></i>
+                        </span>
+                        <span
+                            class="bg-white rounded-circle p-1 d-flex align-items-center justify-content-center mt-n1">
+                            <i class="bi bi-eye text-secondary"></i>
+                        </span>
+                    </div>
+                    <img src="../assets/5_cars.png" class="card-img-top bg-white p-4" alt="Kids Electric Car"
+                        style="height:220px;object-fit:contain;">
+                    <div class="card-body text-center">
+                        <button class="btn btn-dark w-100 mb-2 add-cart opacity-0" data-name="Kids Electric Car">
+                            <i class="bi bi-cart-fill me-2"></i> Add To Cart
+                        </button>
+                        <h6 class="card-title">Kids Electric Car</h6>
+                        <p class="fw-bold mb-1">$200</p>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                            <small class="text-muted ms-2">(25)</small>
+                        </div>
+                        <!-- <div class="d-flex justify-content-center mt-2">
+                            <span class="rounded-circle bg-warning" style="width: 15px; height: 15px;"></span>
+                            <span class="rounded-circle bg-danger" style="width: 15px; height: 15px; margin-left: 5px;"></span>
+                        </div> -->
+                        <div class="form-check d-flex justify-content-left mt-2">
+                            <input class="form-check-input  rounded-circle bg-danger" type="radio" name="color5" value="red">
+                            <input class="form-check-input ms-2 rounded-circle bg-warning" type="radio" name="color5" value="yellow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-6 col-md-3 product-card">
+                <div class="card h-100">
+                    <div class="position-absolute top-0 end-0 m-2 d-flex flex-column align-items-center">
+                        <span class="bg-white rounded-circle p-1 d-flex align-items-center justify-content-center">
+                            <i class="bi bi-heart text-secondary"></i>
+                        </span>
+                        <span
+                            class="bg-white rounded-circle p-1 d-flex align-items-center justify-content-center mt-n1">
+                            <i class="bi bi-eye text-secondary"></i>
+                        </span>
+                    </div>
+
+                    <img src="../assets/6_spikes.png" class="card-img-top bg-white p-4" alt="Jr. Zoom Soccer Cleats"
+                        style="height:220px;object-fit:contain;">
+                    <div class="card-body text-center">
+                        <button class="btn btn-dark w-100 mb-2 add-cart opacity-0" data-name="Jr. Zoom Soccer Cleats">
+                            <i class="bi bi-cart-fill me-2"></i> Add To Cart
+                        </button>
+                        <h6 class="card-title">Jr. Zoom Soccer Cleats</h6>
+                        <p class="fw-bold mb-1">$110</p>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                            <small class="text-muted ms-2">(25)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 7 (NEW) -->
+            <div class="col-6 col-md-3 product-card">
+
+                <div class="card h-100 position-relative">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-2">NEW</span>
+                    <div class="position-absolute top-0 end-0 m-2 d-flex flex-column align-items-center">
+                        <span class="bg-white rounded-circle p-1 d-flex align-items-center justify-content-center">
+                            <i class="bi bi-heart text-secondary"></i>
+                        </span>
+                        <span
+                            class="bg-white rounded-circle p-1 d-flex align-items-center justify-content-center mt-n1">
+                            <i class="bi bi-eye text-secondary"></i>
+                        </span>
+                    </div>
+                    <img src="../assets/7_controller.png" class="card-img-top bg-white p-4" alt="GP11 Shooter USB Gamepad"
+                        style="height:220px;object-fit:contain;">
+                    <div class="card-body text-center">
+                        <button class="btn btn-dark w-100 mb-2 add-cart opacity-0" data-name="GP11 Shooter USB Gamepad">
+                            <i class="bi bi-cart-fill me-2"></i> Add To Cart
+                        </button>
+                        <h6 class="card-title">GP11 Shooter USB Gamepad</h6>
+                        <p class="fw-bold mb-1">$50</p>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                            <small class="text-muted ms-2">(25)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="col-6 col-md-3 product-card">
+                <div class="card h-100">
+                    <div class="position-absolute top-0 end-0 m-2 d-flex flex-column align-items-center">
+                        <span class="bg-white rounded-circle p-1 d-flex align-items-center justify-content-center">
+                            <i class="bi bi-heart text-secondary"></i>
+                        </span>
+                        <span
+                            class="bg-white rounded-circle p-1 d-flex align-items-center justify-content-center mt-n1">
+                            <i class="bi bi-eye text-secondary"></i>
+                        </span>
+                    </div>
+
+                    <img src="../assets/8_jacket.png" class="card-img-top bg-white p-4" alt="Quilted Satin Jacket"
+                        style="height:220px;object-fit:contain;">
+                    <div class="card-body text-center">
+                        <button class="btn btn-dark w-100 mb-2 add-cart opacity-0" data-name="Quilted Satin Jacket">
+                            <i class="bi bi-cart-fill me-2"></i> Add To Cart
+                        </button>
+                        <h6 class="card-title">Quilted Satin Jacket</h6>
+                        <p class="fw-bold mb-1">$120</p>
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                            <small class="text-muted ms-2">(25)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="text-center mt-4">
+            <button class="btn btn-danger px-4">View All Products</button>
+        </div>
+    </section>
+
+    <!--Icons For Support -->
+    <div class="container text-center py-5">
+        <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <img src="../assets/fast-delivery.png" alt="Fast Delivery" class="img-fluid mb-3">
+                <h6>FREE AND FAST DELIVERY</h6>
+                <p class="mb-0">Free delivery for orders over $140</p>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+                <img src="../assets/supprt.png" alt="Customer Service" class="img-fluid mb-3">
+                <h6>24/7 CUSTOMER SERVICE</h6>
+                <p class="mb-0">Friendly 24/7 customer support</p>
+            </div>
+            <div class="col-md-4">
+                <img src="../assets/guarantee.png" alt="Money Back" class="img-fluid mb-3">
+                <h6>MONEY BACK GUARANTEE</h6>
+                <p class="mb-0">We return money within 30 days</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Mouse enter/leave for showing Add To Cart button
+    document.addEventListener('mouseover', function (e) {
+        if (e.target.closest('.product-card')) {
+            var card = e.target.closest('.product-card');
+            var btns = card.getElementsByClassName('add-cart');
+            if (btns.length > 0) {
+                btns[0].classList.remove('opacity-0');
+                btns[0].classList.add('opacity-100');
+            }
+        }
+    });
+    document.addEventListener('mouseout', function (e) {
+        if (e.target.closest('.product-card')) {
+            var card = e.target.closest('.product-card');
+            var btns = card.getElementsByClassName('add-cart');
+            if (btns.length > 0) {
+                btns[0].classList.remove('opacity-100');
+                btns[0].classList.add('opacity-0');
+            }
+        }
+    });
+
+    // Click on Add To Cart button: event delegation
+    document.addEventListener('click', function (e) {
+        if (e.target.classList.contains('add-cart')) {
+            var name = e.target.getAttribute('data-name') || 'product';
+            alert('Added "' + name + '" to cart.');
+        }
+    });
+</script>
+
+</body>
+
+</html>

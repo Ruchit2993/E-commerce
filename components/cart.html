@@ -2,28 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cart Page</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Cart Page - Bootstrap Only</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-white">
-
-<div id="headerNew-placeholder" class="sticky-top"></div>
 
 <div class="container mt-4">
 
   <!-- Breadcrumb -->
-  <nav aria-label="breadcrumb" class="mb-4">
+  <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="../components/test-2.html" class="text-muted text-decoration-none">Home</a></li>
+      <li class="breadcrumb-item text-muted">Home</li>
       <li class="breadcrumb-item active" aria-current="page">Cart</li>
     </ol>
   </nav>
 
   <!-- Products Table -->
-  <div class="table-responsive mb-4">
-    <table class="table align-middle" id="cart-table">
+  <div class="table-responsive">
+    <table class="table align-middle">
       <thead>
         <tr>
           <th>Product</th>
@@ -32,56 +28,83 @@
           <th>Subtotal</th>
         </tr>
       </thead>
-      <tbody id="cart-body">
-        <!-- Dynamic cart items -->
+      <tbody>
+        <tr>
+          <td class="d-flex align-items-center">
+            <button type="button" class="btn btn-danger btn-sm rounded-circle me-2 p-0" style="width:24px;height:24px;">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img src="../assets/monitor.png" alt="LCD Monitor" width="40" height="40" class="me-2">
+            LCD Monitor
+          </td>
+          <td>$650</td>
+          <td>
+            <select class="form-select w-auto">
+              <option selected>01</option>
+              <option>02</option>
+              <option>03</option>
+            </select>
+          </td>
+          <td>$650</td>
+        </tr>
+        <tr>
+          <td class="d-flex align-items-center">
+            <img src="../assets/controller-2.png" alt="HI Gamepad" width="40" height="40" class="me-2">
+            HI Gamepad
+          </td>
+          <td>$550</td>
+          <td>
+            <select class="form-select w-auto">
+              <option>01</option>
+              <option selected>02</option>
+              <option>03</option>
+            </select>
+          </td>
+          <td>$1100</td>
+        </tr>
       </tbody>
     </table>
   </div>
 
   <!-- Action Buttons -->
-  <div class="d-flex justify-content-between mb-4">
+  <div class="d-flex justify-content-between mt-3">
     <button class="btn btn-outline-dark">Return To Shop</button>
-    <button class="btn btn-outline-dark" id="update-cart">Update Cart</button>
+    <button class="btn btn-outline-dark">Update Cart</button>
   </div>
 
   <!-- Coupon + Cart Total side by side -->
-  <div class="row align-items-start">
+  <div class="row align-items-start mt-4">
     <!-- Coupon Code -->
-    <div class="col-md-6 mb-3 mb-md-0">
-      <div class="input-group">
-        <input type="text" class="form-control" id="coupon-code" placeholder="Coupon Code" aria-label="Coupon Code">
-        <button class="btn btn-danger" id="apply-coupon">Apply Coupon</button>
+    <div class="col-md-8 mb-3">
+      <div class="d-flex">
+        <input type="text" class="form-control me-2" placeholder="Coupon Code">
+        <button class="btn btn-danger">Apply Coupon</button>
       </div>
     </div>
     <!-- Cart Total Box -->
-    <div class="col-md-6">
-      <div class="border rounded p-4" id="cart-total-box">
+    <div class="col-md-4 mb-3">
+      <div class="border rounded p-4">
         <h5 class="fw-semibold mb-3">Cart Total</h5>
         <div class="d-flex justify-content-between mb-2">
           <span>Subtotal:</span>
-          <span id="subtotal">$0</span>
+          <span>$1750</span>
         </div>
         <div class="d-flex justify-content-between mb-2">
           <span>Shipping:</span>
-          <span id="shipping">Free</span>
-        </div>
-        <div class="d-flex justify-content-between mb-2" id="discount-row" style="display: none;">
-          <span>Discount (30%):</span>
-          <span id="discount-amount">$0</span>
+          <span>Free</span>
         </div>
         <hr>
         <div class="d-flex justify-content-between mb-3">
           <span>Total:</span>
-          <span id="total">$0</span>
+          <span>$1750</span>
         </div>
-        <button class="btn btn-danger w-100" id="process-checkout">Process to checkout</button>
+        <button class="btn btn-danger w-100">Process to checkout</button>
       </div>
     </div>
   </div>
 </div>
 
-<div id="footer-placeholder"></div>
-
-<script src="./cart.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
